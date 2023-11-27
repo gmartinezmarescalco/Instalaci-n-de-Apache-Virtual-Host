@@ -8,6 +8,13 @@
 
 ![ Segundo Dominio ](./imagenes/3.png)
 
+# Se configuran dos Virtual-Hosts separados para cada dominio en el mismo puerto (2000)
+
+![ Primer VirtualHost ](./imagenes/4.png)
+
+En el segundo host se emplea la directiva de **DirectoryIndex** para indicarle al host que el **"Index"** se llamará ***"hola.html"***
+
+![ Segundo VirtualHost ](./imagenes/5.png)
 
 
 

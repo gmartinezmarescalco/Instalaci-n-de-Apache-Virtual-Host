@@ -1,6 +1,6 @@
 services:
  asir_dns:
-    container_name: asir_dns
+    container_name: asir_dns_dos
     image: ubuntu/bind9
     ports:
       - 53:53/tcp
@@ -18,22 +18,22 @@ services:
    volumes:
      - ./htdocs:/usr/local/apache2/htdocs
      - ./conf:/usr/local/apache2/conf
-   container_name: asir_apache
+   container_name: asir_apache_dos
    networks:
       asir_bind9_subnet:
         ipv4_address: 172.50.5.100
    dns:
       - 172.50.5.110
  asir_cliente:
-    container_name: asir_cliente
+    container_name: asir_cliente_dos
     image: alpine    
     stdin_open: true  
     tty: true
     networks:
       asir_bind9_subnet:
-        ipv4_address: 172.50.5.120     
+        ipv4_address: 172.50.5.120
     dns:
-      - 172.50.5.110
+      - 172.50.5.110     
 networks:
   asir_bind9_subnet:
     external: true
