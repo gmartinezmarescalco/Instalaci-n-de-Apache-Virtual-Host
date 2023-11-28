@@ -16,11 +16,19 @@ En el segundo host se emplea la directiva de **DirectoryIndex** para indicarle a
 
 ![ Segundo VirtualHost ](./imagenes/5.png)
 
+Para comprobar que existe el host virtual podemos utilizar el comando ***Lynx***. El cual es un navegador web basado en texto que se puede utilizar dentro de la consola
 
+Se utilizan los siguientes comandos:
 
+***El 2000 es el puerto asignado***
 
+    lynx www.fabulasoscuras.int:2000
 
+    lynx www.fabulasmaravillosas.int:2000
 
+![ Comprobación Lynx 1 ](./imagenes/6.png)
+
+![ Comprobación Lynx 2 ](./imagenes/7.png)
 
 
 
